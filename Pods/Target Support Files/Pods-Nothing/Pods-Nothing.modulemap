@@ -1,0 +1,6 @@
+module Pods_Nothing {
+  umbrella header "Pods-Nothing-umbrella.h"
+
+  export *
+  module * { export * }
+}
