@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44F9967E5BE449E2CE16EAAE /* Pods_Nothing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FECE8E1AA3451E8EE913400E /* Pods_Nothing.framework */; };
 		701D6BFD25060DD500231D6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701D6BFC25060DD500231D6A /* AppDelegate.swift */; };
 		701D6C0125060DD500231D6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701D6C0025060DD500231D6A /* ViewController.swift */; };
 		701D6C0425060DD500231D6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 701D6C0225060DD500231D6A /* Main.storyboard */; };
@@ -29,7 +30,10 @@
 		701D6C7C2506240B00231D6A /* xingqiu.png in Resources */ = {isa = PBXBuildFile; fileRef = 701D6C742506240B00231D6A /* xingqiu.png */; };
 		701D6C7D2506240B00231D6A /* erji_select.png in Resources */ = {isa = PBXBuildFile; fileRef = 701D6C752506240B00231D6A /* erji_select.png */; };
 		701D6C7E2506240B00231D6A /* yongquan.png in Resources */ = {isa = PBXBuildFile; fileRef = 701D6C762506240B00231D6A /* yongquan.png */; };
-		905F534E618021AB52DA0CEB /* libPods-Nothing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 186324CF02499B5D6575E3FF /* libPods-Nothing.a */; };
+		704FFEA925071C150016C44C /* HomeNormalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704FFEA825071C150016C44C /* HomeNormalTableViewCell.swift */; };
+		704FFEAE25075AE20016C44C /* ViewController0908.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704FFEAD25075AE20016C44C /* ViewController0908.swift */; };
+		704FFEB125075F410016C44C /* SWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704FFEB025075F410016C44C /* SWebViewController.swift */; };
+		704FFEB32507709D0016C44C /* UModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704FFEB22507709D0016C44C /* UModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +55,6 @@
 
 /* Begin PBXFileReference section */
 		0A3C16F77CF4D7BF95BF216A /* Pods-Nothing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nothing.debug.xcconfig"; path = "Target Support Files/Pods-Nothing/Pods-Nothing.debug.xcconfig"; sourceTree = "<group>"; };
-		186324CF02499B5D6575E3FF /* libPods-Nothing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Nothing.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		701D6BF925060DD500231D6A /* Nothing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nothing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		701D6BFC25060DD500231D6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		701D6C0025060DD500231D6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,7 +83,12 @@
 		701D6C742506240B00231D6A /* xingqiu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xingqiu.png; sourceTree = "<group>"; };
 		701D6C752506240B00231D6A /* erji_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = erji_select.png; sourceTree = "<group>"; };
 		701D6C762506240B00231D6A /* yongquan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yongquan.png; sourceTree = "<group>"; };
+		704FFEA825071C150016C44C /* HomeNormalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNormalTableViewCell.swift; sourceTree = "<group>"; };
+		704FFEAD25075AE20016C44C /* ViewController0908.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController0908.swift; sourceTree = "<group>"; };
+		704FFEB025075F410016C44C /* SWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWebViewController.swift; sourceTree = "<group>"; };
+		704FFEB22507709D0016C44C /* UModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UModel.swift; sourceTree = "<group>"; };
 		D674DC7AE6B5EC185A93DD9A /* Pods-Nothing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nothing.release.xcconfig"; path = "Target Support Files/Pods-Nothing/Pods-Nothing.release.xcconfig"; sourceTree = "<group>"; };
+		FECE8E1AA3451E8EE913400E /* Pods_Nothing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nothing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				905F534E618021AB52DA0CEB /* libPods-Nothing.a in Frameworks */,
+				44F9967E5BE449E2CE16EAAE /* Pods_Nothing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +196,8 @@
 		701D6C46250613E000231D6A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				704FFEAF25075F2D0016C44C /* WebView */,
+				704FFEA725071BED0016C44C /* Home */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -210,6 +220,7 @@
 		701D6C49250613E000231D6A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				704FFEAA25075A8D0016C44C /* Home */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -217,12 +228,12 @@
 		701D6C4A250613E000231D6A /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				701D6C51250618A700231D6A /* Base */,
+				701D6C4F250618A700231D6A /* HomeViewController.swift */,
 				701D6C4E250618A700231D6A /* FindViewController.swift */,
 				701D6C50250618A700231D6A /* FirendViewController.swift */,
-				701D6C4F250618A700231D6A /* HomeViewController.swift */,
 				701D6C54250618A700231D6A /* MineViewController.swift */,
 				701D6C55250618A700231D6A /* SXWTabBarController.swift */,
+				701D6C51250618A700231D6A /* Base */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -230,6 +241,7 @@
 		701D6C4B250613E000231D6A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				704FFEB22507709D0016C44C /* UModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -258,10 +270,34 @@
 			path = tababr;
 			sourceTree = "<group>";
 		};
+		704FFEA725071BED0016C44C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				704FFEA825071C150016C44C /* HomeNormalTableViewCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		704FFEAA25075A8D0016C44C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				704FFEAD25075AE20016C44C /* ViewController0908.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		704FFEAF25075F2D0016C44C /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				704FFEB025075F410016C44C /* SWebViewController.swift */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
 		A4D189D3D3C7B83D04FEE44F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				186324CF02499B5D6575E3FF /* libPods-Nothing.a */,
+				FECE8E1AA3451E8EE913400E /* Pods_Nothing.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -277,6 +313,7 @@
 				701D6BF525060DD500231D6A /* Sources */,
 				701D6BF625060DD500231D6A /* Frameworks */,
 				701D6BF725060DD500231D6A /* Resources */,
+				3B6AC6604A44C08C21E58D7B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -402,6 +439,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3B6AC6604A44C08C21E58D7B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nothing/Pods-Nothing-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nothing/Pods-Nothing-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nothing/Pods-Nothing-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C35EFB00F810D6AC8CE8D304 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -431,11 +485,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				704FFEAE25075AE20016C44C /* ViewController0908.swift in Sources */,
 				701D6C56250618A700231D6A /* FindViewController.swift in Sources */,
+				704FFEA925071C150016C44C /* HomeNormalTableViewCell.swift in Sources */,
 				701D6C0125060DD500231D6A /* ViewController.swift in Sources */,
 				701D6BFD25060DD500231D6A /* AppDelegate.swift in Sources */,
 				701D6C5C250618A700231D6A /* SXWTabBarController.swift in Sources */,
+				704FFEB32507709D0016C44C /* UModel.swift in Sources */,
 				701D6C5A250618A700231D6A /* BaseNavgationController.swift in Sources */,
+				704FFEB125075F410016C44C /* SWebViewController.swift in Sources */,
 				701D6C59250618A700231D6A /* BaseViewController.swift in Sources */,
 				701D6C58250618A700231D6A /* FirendViewController.swift in Sources */,
 				701D6C57250618A700231D6A /* HomeViewController.swift in Sources */,
