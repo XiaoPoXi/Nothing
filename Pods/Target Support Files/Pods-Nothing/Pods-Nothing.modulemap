@@ -1,4 +1,4 @@
-module Pods_Nothing {
+framework module Pods_Nothing {
   umbrella header "Pods-Nothing-umbrella.h"
 
   export *
