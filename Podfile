@@ -5,7 +5,7 @@ target ‘Nothing’ do
   use_frameworks!
 #  pod 'AFNetworking'
 #  pod 'Masonry'
-#  pod 'MBProgressHUD'
+  pod 'MBProgressHUD'
 #  pod 'MJRefresh'
 #  pod 'SDWebImage'
 #  pod 'MJRefresh'

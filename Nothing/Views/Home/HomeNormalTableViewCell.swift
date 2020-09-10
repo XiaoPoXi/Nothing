@@ -24,12 +24,12 @@ class HomeNormalTableViewCell: UITableViewCell {
         userLabel.font = UIFont.boldSystemFont(ofSize: 20)
         userLabel.textAlignment = .left
         userLabel.textColor = .red
-        userLabel.text = "那么多遗憾那么多期盼你知道啊"
         userLabel.numberOfLines = 0
         self.contentView.addSubview(userLabel)
         
         userLabel.snp.makeConstraints { (make) in
             make.left.equalToSuperview().offset(30)
+            make.right.equalToSuperview().offset(-30)
             make.centerY.equalToSuperview()
         }
  

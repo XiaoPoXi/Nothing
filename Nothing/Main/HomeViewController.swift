@@ -12,14 +12,17 @@ import UIKit
 class HomeViewController: BaseViewController,UITableViewDelegate,UITableViewDataSource{
     
     
+    
+    
+//    MARK: 视图创建
     var dataArray = [HomeModel]()
-    var dataSource: [String: String] = ["title": "随机",
-                                        "title": "Swift-页面跳转+传值",
-                                        "title": "Swift WKWebView详细解读",
-                                        "title": "Swift自动布局SnapKit的详细使用介绍",
-                                        "title": "Swift框架学习之-图片处理库Kingfisher使用",
-                                        "title": "1",
-                                        "title": "2",]
+    var dataSource: Array<String> = ["随机",
+                                        "Swift-页面跳转+传值",
+                                        "Swift WKWebView详细解读",
+                                        "Swift自动布局SnapKit的详细使用介绍",
+                                        "Swift框架学习之-图片处理库Kingfisher使用",
+                                        "1",
+                                        "2",]
     
     var tableView:UITableView!
     private let HomeNormalTableViewCellID = "productCell"
@@ -35,9 +38,8 @@ class HomeViewController: BaseViewController,UITableViewDelegate,UITableViewData
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(HomeNormalTableViewCell.self, forCellReuseIdentifier: HomeNormalTableViewCellID)
-        tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
+//        tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
 
-        self.requestData();
         
     }
     //MARK: UITableView 代理
@@ -69,7 +71,7 @@ class HomeViewController: BaseViewController,UITableViewDelegate,UITableViewData
         
         let HomeNormalTableViewCell: HomeNormalTableViewCell = tableView.dequeueReusableCell(withIdentifier: HomeNormalTableViewCellID, for: indexPath) as! HomeNormalTableViewCell
         HomeNormalTableViewCell.selectionStyle = UITableViewCell.SelectionStyle.none
-        HomeNormalTableViewCell.model = dataArray[indexPath.row]
+        HomeNormalTableViewCell.userLabel.text = dataSource[indexPath.row]
         return HomeNormalTableViewCell
         
         
@@ -80,64 +82,53 @@ class HomeViewController: BaseViewController,UITableViewDelegate,UITableViewData
     }
      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath.row)
-        if indexPath.section == 0 {
-            
-        }
         switch indexPath.row {
-            
-        case 0:
-//            随机
-            let v1 = ViewController0908()
-            self.hidesBottomBarWhenPushed = true
-            self.navigationController?.pushViewController(v1, animated: true)
-            self.hidesBottomBarWhenPushed = false
-            
-        case 1:
-//            Swift-页面跳转+传值
-        let v2 = SWebViewController()
-        v2.urlssss = "https://www.jianshu.com/p/114e87691d3b"
-        self.hidesBottomBarWhenPushed = true
-        self.navigationController?.pushViewController(v2, animated: true)
-        self.hidesBottomBarWhenPushed = false
-        
-        case 2:
-//        Swift WKWebView详细解读
-        let v2 = SWebViewController()
-        v2.urlssss = "https://blog.csdn.net/sinat_31177681/article/details/107099845"
-        self.hidesBottomBarWhenPushed = true
-        self.navigationController?.pushViewController(v2, animated: true)
-        self.hidesBottomBarWhenPushed = false
-            
-        case 3:
-//        Swift自动布局SnapKit的详细使用介绍
-        let v2 = SWebViewController()
-        v2.urlssss = "https://www.jianshu.com/p/2bad53a2a180"
-        self.hidesBottomBarWhenPushed = true
-        self.navigationController?.pushViewController(v2, animated: true)
-        self.hidesBottomBarWhenPushed = false
-        
-        case 4:
-//        Swift框架学习之-图片处理库Kingfisher使用
-        let v2 = SWebViewController()
-        v2.urlssss = "https://www.jianshu.com/p/55bbfbdf78de"
-        self.hidesBottomBarWhenPushed = true
-        self.navigationController?.pushViewController(v2, animated: true)
-        self.hidesBottomBarWhenPushed = false
-        
-            
-            
-        default:
-            break
-        }
+                    
+                case 0:
+        //            随机
+                    let v1 = ViewController0908()
+                    self.hidesBottomBarWhenPushed = true
+                    self.navigationController?.pushViewController(v1, animated: true)
+                    self.hidesBottomBarWhenPushed = false
+                    
+                case 1:
+        //            Swift-页面跳转+传值
+                let v2 = SWebViewController()
+                v2.urlssss = "https://www.jianshu.com/p/114e87691d3b"
+                self.hidesBottomBarWhenPushed = true
+                self.navigationController?.pushViewController(v2, animated: true)
+                self.hidesBottomBarWhenPushed = false
+                
+                case 2:
+        //        Swift WKWebView详细解读
+                let v2 = SWebViewController()
+                v2.urlssss = "https://blog.csdn.net/sinat_31177681/article/details/107099845"
+                self.hidesBottomBarWhenPushed = true
+                self.navigationController?.pushViewController(v2, animated: true)
+                self.hidesBottomBarWhenPushed = false
+                    
+                case 3:
+        //        Swift自动布局SnapKit的详细使用介绍
+                let v2 = SWebViewController()
+                v2.urlssss = "https://www.jianshu.com/p/2bad53a2a180"
+                self.hidesBottomBarWhenPushed = true
+                self.navigationController?.pushViewController(v2, animated: true)
+                self.hidesBottomBarWhenPushed = false
+                
+                case 4:
+        //        Swift框架学习之-图片处理库Kingfisher使用
+                let v2 = SWebViewController()
+                v2.urlssss = "https://www.jianshu.com/p/55bbfbdf78de"
+                self.hidesBottomBarWhenPushed = true
+                self.navigationController?.pushViewController(v2, animated: true)
+                self.hidesBottomBarWhenPushed = false
+                
+                    
+                    
+                default:
+                    break
+                }
     }
 
 }
 
-// MARK: - 请求
-extension HomeViewController {
-    
-    func requestData() {
-        self.dataArray = dataSource as? [HomeModel] ?? [] // []数组
-        self.tableView.reloadData()
-    }
-}
