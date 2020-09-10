@@ -83,46 +83,51 @@ class HomeViewController: BaseViewController,UITableViewDelegate,UITableViewData
      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath.row)
         switch indexPath.row {
+            
                     
-                case 0:
-        //            随机
-                    let v1 = ViewController0908()
-                    self.hidesBottomBarWhenPushed = true
-                    self.navigationController?.pushViewController(v1, animated: true)
-                    self.hidesBottomBarWhenPushed = false
-                    
-                case 1:
-        //            Swift-页面跳转+传值
+            case 0:
+    //             随机
+                let v1 = ViewController0908()
+                self.hidesBottomBarWhenPushed = true
+                self.navigationController?.pushViewController(v1, animated: true)
+                self.hidesBottomBarWhenPushed = false
+                
+            case 1:
+                
+    //                Swift-页面跳转+传值
                 let v2 = SWebViewController()
                 v2.urlssss = "https://www.jianshu.com/p/114e87691d3b"
                 self.hidesBottomBarWhenPushed = true
                 self.navigationController?.pushViewController(v2, animated: true)
                 self.hidesBottomBarWhenPushed = false
-                
-                case 2:
-        //        Swift WKWebView详细解读
+            
+            case 2:
+//                    Swift WKWebView详细解读
                 let v2 = SWebViewController()
                 v2.urlssss = "https://blog.csdn.net/sinat_31177681/article/details/107099845"
                 self.hidesBottomBarWhenPushed = true
                 self.navigationController?.pushViewController(v2, animated: true)
                 self.hidesBottomBarWhenPushed = false
-                    
-                case 3:
-        //        Swift自动布局SnapKit的详细使用介绍
+                
+            case 3:
+    //               Swift自动布局SnapKit的详细使用介绍
                 let v2 = SWebViewController()
                 v2.urlssss = "https://www.jianshu.com/p/2bad53a2a180"
                 self.hidesBottomBarWhenPushed = true
                 self.navigationController?.pushViewController(v2, animated: true)
                 self.hidesBottomBarWhenPushed = false
-                
-                case 4:
-        //        Swift框架学习之-图片处理库Kingfisher使用
+            
+            case 4:
+    //               Swift框架学习之-图片处理库Kingfisher使用
                 let v2 = SWebViewController()
                 v2.urlssss = "https://www.jianshu.com/p/55bbfbdf78de"
                 self.hidesBottomBarWhenPushed = true
                 self.navigationController?.pushViewController(v2, animated: true)
                 self.hidesBottomBarWhenPushed = false
                 
+            case 5:
+            
+                showMsg("数据有问题")
                     
                     
                 default:
